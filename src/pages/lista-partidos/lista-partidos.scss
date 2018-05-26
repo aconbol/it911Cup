@@ -1,0 +1,24 @@
+page-lista-partidos {
+
+}
+ion-segment {
+  display: block;
+  white-space: nowrap;
+  font-size: 0;
+  overflow: auto;
+  background-color: #456ba5;
+  margin: 0;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+
+  ion-segment-button.segment-button {
+    display: inline-block;
+    min-width: 40px;
+    max-height: 40px;
+    width: auto;
+  }
+}

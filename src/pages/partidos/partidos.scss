@@ -1,0 +1,36 @@
+page-partidos {
+
+  ion-segment {
+    display: block;
+    white-space: nowrap;
+    font-size: 0;
+    overflow: auto;
+    background-color: #456ba5;
+    margin: 0;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+      display: none;
+    }
+
+    ion-segment-button.segment-button {
+      display: inline-block;
+      min-width: 40px;
+      min-height: 47px;
+      width: auto;
+    }
+
+    br {
+      display: block; /* makes it have a width */
+      content: ""; /* clears default height */
+      margin-top: -12px; /* change this to whatever height you want it */
+      line-height: 2px;
+    }
+  }
+
+}
+
+
+
+

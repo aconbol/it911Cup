@@ -1,0 +1,64 @@
+<ion-header no-border no-margin>
+  <ion-toolbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons left>
+      <button ion-button icon-only small >
+        <ion-icon name="arrow-dropleft"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-title text-center>Partidos</ion-title>
+
+    <ion-buttons right>
+      <button ion-button icon-only small (click)="navigateJulio()">
+        <ion-icon name="arrow-dropright"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+<div color="primary">
+  <ion-segment [(ngModel)]="fechas" color="light" mode="ios">
+    <ion-segment-button
+                        *ngFor ="let dia of dias"
+                        value="{{getDiaD(dia)}}">
+      {{diaSemana[dia.getDay()]}}<br>{{dia.getDate()}}
+    </ion-segment-button>
+  </ion-segment>
+</div>
+</ion-header>
+
+<ion-content>
+  <div *ngFor="let fixture of fixtures">
+    <div [hidden]="fechas !== getDia(fixture)">
+      <ion-list>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-5 no-padding no-margin>
+              <ion-item text-right text-wrap no-padding no-margin no-lines>
+                <ion-avatar item-end>
+                  <img src="{{getSrcBanderaEquipo(fixture.localteam_id)}}">
+                </ion-avatar>
+                <p>{{getNombreEquipo(fixture.localteam_id)}}</p>
+              </ion-item>
+            </ion-col>
+            <ion-col col-2 no-padding no-margin>
+              <ion-item text-center no-padding no-margin no-lines>
+                <h3>{{fixture.scores.localteam_score + ' - ' + fixture.scores.visitorteam_score}}</h3>
+                <h5>{{getHoraLocal(fixture.time.starting_at.time)}}</h5>
+              </ion-item>
+            </ion-col>
+            <ion-col col-5 no-padding no-margin>
+              <ion-item text-left text-wrap no-padding no-margin no-lines>
+                <ion-avatar item-start="">
+                  <img src="{{getSrcBanderaEquipo(fixture.visitorteam_id)}}">
+                </ion-avatar>
+                <p>{{getNombreEquipo(fixture.visitorteam_id)}}</p>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-list>
+    </div>
+  </div>
+</ion-content>

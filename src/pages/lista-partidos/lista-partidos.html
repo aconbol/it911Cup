@@ -1,0 +1,10 @@
+<div>
+  <ion-segment [(ngModel)]="mes" color="light" mode="ios">
+    <ion-segment-button *ngFor ="let dia of mes" value="'ju' + {{dia}}">
+      {{dia}}
+    </ion-segment-button>
+  </ion-segment>
+</div>
+<div>
+  <button ion-button (onclick)="getDatesBetween()" >Ver</button>
+</div>

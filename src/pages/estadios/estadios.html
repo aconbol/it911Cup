@@ -1,0 +1,40 @@
+<ion-header no-border no-margin>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-center>Estadios</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="cards-bg">
+  <ion-fab bottom right>
+    <button color="secondary" ion-fab (click)="pushUbicaciones()">
+      <ion-icon name="pin"></ion-icon>
+    </button>
+  </ion-fab>
+  <div>
+    <ion-card *ngFor ="let campo of estadiums">
+      <ion-card-title text-center color="primary">
+        <h1>{{campo.name}}</h1>
+      </ion-card-title>
+      <img src="{{campo.image_path}}"/>
+      <ion-card-content>
+        <ion-grid text-left>
+          <ion-row no-margin nowrap>
+            <ion-col col-4>Ciudad: </ion-col>
+            <ion-col>{{campo.city}}</ion-col>
+          </ion-row>
+          <ion-row no-margin nowrap>
+            <ion-col col-4>Dirección: </ion-col>
+            <ion-col>{{campo.address}}</ion-col>
+          </ion-row>
+          <ion-row no-margin nowrap>
+            <ion-col col-4>Capacidad: </ion-col>
+            <ion-col>{{campo.capacity}} personas</ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
