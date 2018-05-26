@@ -25692,7 +25692,7 @@ page-estadios #map_canvas {
 }
 
 .background {
-  background: url("assets/imgs/home-fondo-blanco.png") no-repeat fixed center;
+  background: url("../assets/imgs/home-fondo-blanco.png") no-repeat fixed center;
   background-size: cover;
 }
 
