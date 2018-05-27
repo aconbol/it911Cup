@@ -25709,10 +25709,9 @@ page-jugadores .slide-title {
   margin-top: 2.8rem;
 }
 
-page-jugadores .slide-image {
-  max-height: 50%;
-  max-width: 60%;
-  margin: 18px 0;
+page-jugadores .centrado img {
+  position: center !important;
+  margin: 0 auto !important;
 }
 
 page-jugadores b {
@@ -25728,6 +25727,11 @@ page-jugadores p {
 
 page-jugadores p b {
   color: #000000;
+}
+
+page-jugadores h2 {
+  font-weight: bold;
+  color: #fff;
 }
 
 ion-segment {

@@ -13,10 +13,14 @@ page-jugadores {
     margin-top: 2.8rem;
   }
 
-  .slide-image {
-    max-height: 50%;
-    max-width: 60%;
-    margin: 18px 0;
+  //.slide-image {
+  //  max-height: 50%;
+  //  max-width: 60%;
+  //  margin: 18px 0;
+  //}
+  .centrado img {
+    position: center !important;
+    margin: 0 auto !important;
   }
 
   b {
@@ -32,6 +36,12 @@ page-jugadores {
     b {
       color: #000000;
     }
+
+  }
+
+  h2 {
+    font-weight: bold;
+    color: #fff;
   }
 
 }

@@ -602,7 +602,7 @@ webpackEmptyAsyncContext.id = 155;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -622,7 +622,7 @@ var HomePage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-home',template:/*ion-inline-start:"C:\apptest\it911Cup\src\pages\home\home.html"*/'<ion-header no-border no-margin>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title text-center>IT911 Cup</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="background">\n\n</ion-content>\n'/*ion-inline-end:"C:\apptest\it911Cup\src\pages\home\home.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
     ], HomePage);
     return HomePage;
 }());
@@ -637,7 +637,7 @@ var HomePage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PartidosPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_config_fixtures__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_config_equiposMonks__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_config_venues__ = __webpack_require__(101);
@@ -741,7 +741,7 @@ var PartidosPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-partidos',template:/*ion-inline-start:"C:\apptest\it911Cup\src\pages\partidos\partidos.html"*/'<ion-header no-border no-margin>\n  <ion-toolbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-buttons left>\n      <button ion-button icon-only small >\n        <ion-icon name="arrow-dropleft"></ion-icon>\n      </button>\n    </ion-buttons>\n\n    <ion-title text-center>Partidos</ion-title>\n\n    <ion-buttons right>\n      <button ion-button icon-only small (click)="navigateJulio()">\n        <ion-icon name="arrow-dropright"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-toolbar>\n<div color="primary">\n  <ion-segment [(ngModel)]="fechas" color="light" mode="ios">\n    <ion-segment-button\n                        *ngFor ="let dia of dias"\n                        value="{{getDiaD(dia)}}">\n      {{diaSemana[dia.getDay()]}}<br>{{dia.getDate()}}\n    </ion-segment-button>\n  </ion-segment>\n</div>\n</ion-header>\n\n<ion-content>\n  <div *ngFor="let fixture of fixtures">\n    <div [hidden]="fechas !== getDia(fixture)">\n      <ion-list>\n        <ion-grid>\n          <ion-row>\n            <ion-col col-5 no-padding no-margin>\n              <ion-item text-right text-wrap no-padding no-margin no-lines>\n                <ion-avatar item-end>\n                  <img src="{{getSrcBanderaEquipo(fixture.localteam_id)}}">\n                </ion-avatar>\n                <p>{{getNombreEquipo(fixture.localteam_id)}}</p>\n              </ion-item>\n            </ion-col>\n            <ion-col col-2 no-padding no-margin>\n              <ion-item text-center no-padding no-margin no-lines>\n                <h3>{{fixture.scores.localteam_score + \' - \' + fixture.scores.visitorteam_score}}</h3>\n                <h5>{{getHoraLocal(fixture.time.starting_at.time)}}</h5>\n              </ion-item>\n            </ion-col>\n            <ion-col col-5 no-padding no-margin>\n              <ion-item text-left text-wrap no-padding no-margin no-lines>\n                <ion-avatar item-start="">\n                  <img src="{{getSrcBanderaEquipo(fixture.visitorteam_id)}}">\n                </ion-avatar>\n                <p>{{getNombreEquipo(fixture.visitorteam_id)}}</p>\n              </ion-item>\n            </ion-col>\n          </ion-row>\n        </ion-grid>\n      </ion-list>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\apptest\it911Cup\src\pages\partidos\partidos.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], PartidosPage);
     return PartidosPage;
 }());
@@ -3407,7 +3407,7 @@ var Fixtures = [
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EstadiosPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_config_venues__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__estadio_geopos_estadio_geopos__ = __webpack_require__(203);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -3442,7 +3442,7 @@ var EstadiosPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-estadios',template:/*ion-inline-start:"C:\apptest\it911Cup\src\pages\estadios\estadios.html"*/'<ion-header no-border no-margin>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title text-center>Estadios</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content class="cards-bg">\n  <ion-fab bottom right>\n    <button color="secondary" ion-fab (click)="pushUbicaciones()">\n      <ion-icon name="pin"></ion-icon>\n    </button>\n  </ion-fab>\n  <div>\n    <ion-card *ngFor ="let campo of estadiums">\n      <ion-card-title text-center color="primary">\n        <h1>{{campo.name}}</h1>\n      </ion-card-title>\n      <img src="{{campo.image_path}}"/>\n      <ion-card-content>\n        <ion-grid text-left>\n          <ion-row no-margin nowrap>\n            <ion-col col-4>Ciudad: </ion-col>\n            <ion-col>{{campo.city}}</ion-col>\n          </ion-row>\n          <ion-row no-margin nowrap>\n            <ion-col col-4>Dirección: </ion-col>\n            <ion-col>{{campo.address}}</ion-col>\n          </ion-row>\n          <ion-row no-margin nowrap>\n            <ion-col col-4>Capacidad: </ion-col>\n            <ion-col>{{campo.capacity}} personas</ion-col>\n          </ion-row>\n        </ion-grid>\n      </ion-card-content>\n    </ion-card>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\apptest\it911Cup\src\pages\estadios\estadios.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], EstadiosPage);
     return EstadiosPage;
 }());
@@ -3457,7 +3457,7 @@ var EstadiosPage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EstadioGeoposPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_google_maps__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_config_venues__ = __webpack_require__(101);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -3531,8 +3531,8 @@ var EstadioGeoposPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-estadio-geopos',template:/*ion-inline-start:"C:\apptest\it911Cup\src\pages\estadio-geopos\estadio-geopos.html"*/'<ion-header no-border no-margin>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Estadios GEO</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <div id="map_canvas"></div>\n</ion-content>\n'/*ion-inline-end:"C:\apptest\it911Cup\src\pages\estadio-geopos\estadio-geopos.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], EstadioGeoposPage);
     return EstadioGeoposPage;
 }());
@@ -3547,7 +3547,7 @@ var EstadioGeoposPage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EquipoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_config_equiposMonks__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__jugadores_jugadores__ = __webpack_require__(206);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -3590,6 +3590,7 @@ var EquipoPage = /** @class */ (function () {
         }
     };
     EquipoPage.prototype.jugadores = function (equipo, id) {
+        console.log('Equipo:', equipo, id);
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__jugadores_jugadores__["a" /* JugadoresPage */], {
             equipo_name: equipo,
             equipo_id: id
@@ -3599,8 +3600,8 @@ var EquipoPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-equipo',template:/*ion-inline-start:"C:\apptest\it911Cup\src\pages\equipo\equipo.html"*/'<ion-header no-border no-margin>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Equipos</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-item-sliding *ngFor="let equipo of equipos">\n      <ion-item>\n        <ion-avatar item-start small>\n          <img src="{{equipo.logo_path}}">\n        </ion-avatar>\n        <h3>{{equipo.name}}</h3>\n        <ion-icon item-end name="swap"\n                  icon-only disabled small></ion-icon>\n      </ion-item>\n      <ion-item-options>\n        <button ion-button color="primary" (click)="jugadores(equipo.name, equipo.id)">Datos</button>\n        <button ion-button color="secondary" (click)="jugadores(equipo.name, equipo.id)">Jugadores</button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n</ion-content>\n\n<ion-footer>\n  <ion-navbar color="primary">\n    <ion-searchbar (ionInput)="getItems($event)">\n    </ion-searchbar>\n  </ion-navbar>\n</ion-footer>\n'/*ion-inline-end:"C:\apptest\it911Cup\src\pages\equipo\equipo.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], EquipoPage);
     return EquipoPage;
 }());
@@ -3615,8 +3616,9 @@ var EquipoPage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JugadoresPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_rest_service_rest_service__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_config_countries__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_rest_service_rest_service__ = __webpack_require__(207);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3629,25 +3631,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var JugadoresPage = /** @class */ (function () {
-    function JugadoresPage(navCtrl, navParams, restService) {
+    function JugadoresPage(navCtrl, navParams, restService, modalCtrl) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.restService = restService;
+        this.modalCtrl = modalCtrl;
+        this.paises = __WEBPACK_IMPORTED_MODULE_2__app_config_countries__["a" /* Countries */];
         this.eq_id = this.navParams.get('equipo_id');
         this.eq_name = this.navParams.get('equipo_name');
+        this.getSquad(this.eq_id);
     }
     JugadoresPage.prototype.ionViewDidLoad = function () {
-        this.getSquad(this.eq_id);
         console.log('ionViewDidLoad JugadoresPage');
     };
     JugadoresPage.prototype.getSquad = function (id_eq) {
         var _this = this;
         this.restService.getSquad(id_eq)
-            .subscribe(function (equipo) {
-            // console.log('JSON dentro de subscribe - jugador.ts',
-            //   JSON.stringify(equipo['data']));
-            _this.squadJson = equipo['data'];
+            .subscribe(function (plantel) {
+            _this.squadJson = plantel['data'];
+            _this.getJugadoresEq(plantel['data']);
+            _this.datosJugadoresEq = plantel['data'];
+            console.log('JSON getSquad en subscribe - jugadores.ts', _this.datosJugadoresEq);
             _this.squadLoaded = Promise.resolve(true);
         });
     };
@@ -3661,13 +3667,58 @@ var JugadoresPage = /** @class */ (function () {
             _this.jugadorLoaded = Promise.resolve(true);
         });
     };
+    JugadoresPage.prototype.getJugadoresEq = function (squad) {
+        var _this = this;
+        squad.forEach(function (player) {
+            var datosPlayer;
+            _this.restService.getJugador(player['player_id'])
+                .subscribe(function (juRest) {
+                datosPlayer = juRest['data'];
+                // player['datoActual'] = datosPlayer;
+                //   player.datoActual = datosPlayer;
+                Object.assign(player, datosPlayer);
+                _this.getTeam(datosPlayer['player_id'], player);
+                console.log('En squad se encontro el jugdor', datosPlayer['player_id']);
+            }, function (error) {
+                console.log('error al encontrar jugadores por equipo');
+            });
+        });
+    };
+    JugadoresPage.prototype.getTeam = function (id_team, player) {
+        var _this = this;
+        this.restService.getEquipo(id_team)
+            .subscribe(function (teamRest) {
+            // console.log('JSON dentro de subscribe - jugador.ts',
+            //   JSON.stringify(juRest['data']));
+            var dato = teamRest['data'];
+            _this.eq_jug_name = dato.name;
+            _this.eq_img_path = dato.logo_path;
+            player.equipo_origen = _this.eq_jug_name;
+            player.equipo_logo_path = _this.eq_img_path;
+            _this.paises.forEach(function (pais) {
+                if (pais.id === dato.country_id)
+                    player.equipo_pais_name = pais.name;
+            });
+            console.log('Datos equipo actual', _this.eq_jug_name, _this.eq_img_path);
+            _this.jugadorLoaded = Promise.resolve(true);
+        }, function (error) {
+            _this.eq_jug_name = null;
+            _this.eq_img_path = null;
+            console.log('error al encontrar equipo');
+        });
+    };
+    JugadoresPage.prototype.openModal = function (jugador) {
+        var modalPage = this.modalCtrl.create('ModalPage');
+        modalPage.present();
+    };
     JugadoresPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-jugadores',template:/*ion-inline-start:"C:\apptest\it911Cup\src\pages\jugadores\jugadores.html"*/'<ion-header no-border no-margin>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title text-center>{{eq_name}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <!--<ion-slides pager>-->\n    <!--<ion-slide *ngFor="let jugador of squadJson" >-->\n      <!--{{getJugador(jugador[\'player_id\'])}}-->\n      <!--<ion-title>Numero de jugadores {{jugador.length}}</ion-title>-->\n      <!--<h3>{{jugador[\'player_id\']}}</h3>-->\n      <!--<h3>{{datosJugador[\'fullname\']}}</h3>-->\n      <!--&lt;!&ndash;{{let datoJugador = getJugador(jugador[\'player_id\'])}}&ndash;&gt;-->\n      <!--&lt;!&ndash;<ion-title>{{datoJugador[\'player_id\']}}</ion-title>&ndash;&gt;-->\n    <!--</ion-slide>-->\n  <!--</ion-slides>-->\n</ion-content>\n'/*ion-inline-end:"C:\apptest\it911Cup\src\pages\jugadores\jugadores.html"*/,
+            selector: 'page-jugadores',template:/*ion-inline-start:"C:\apptest\it911Cup\src\pages\jugadores\jugadores.html"*/'<ion-header no-border no-margin>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title text-center>{{eq_name}}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-slides>\n    <ion-slide *ngFor="let jugador of datosJugadoresEq">\n      <ion-title text-center text-wrap>{{jugador[\'fullname\']}}</ion-title>\n      <ion-card>\n        <ion-fab top right >\n          <button ion-fab mini color="light" (click)="openModal(jugador)" >\n            <ion-icon name="stats"></ion-icon>\n          </button>\n        </ion-fab>\n        <div class="centrado">\n          <img src="{{jugador[\'image_path\']}}">\n        </div>\n        <div padding-vertical>\n          <ion-row>\n            <ion-col col-7 text-right>\n              <h2 style="font-weight: bold;" no-margin no-border>País de Nacimiento:</h2>\n            </ion-col>\n            <ion-col col-5 text-left>{{jugador[\'birthcountry\']}}</ion-col>\n          </ion-row>\n          <ion-row>\n            <ion-col col-7 text-right>\n              <h2 style="font-weight: bold;" no-margin no-border>Fecha de Nacimiento:</h2>\n            </ion-col>\n            <ion-col col-5 text-left>{{jugador[\'birthdate\']}}</ion-col>\n          </ion-row>\n          <ion-row>\n            <ion-col col-7 text-right>\n              <h2 style="font-weight: bold;" no-margin no-border>Lugar de Nacimiento:</h2>\n            </ion-col>\n            <ion-col col-5 text-left>{{jugador[\'birthplace\']}}</ion-col>\n          </ion-row>\n          <ion-row>\n            <ion-col col-7 text-right>\n              <h2 style="font-weight: bold;" no-margin no-border>Nacionalidad:</h2>\n            </ion-col>\n            <ion-col col-5 text-left>{{jugador[\'nationality\']}}</ion-col>\n          </ion-row>\n          <ion-row>\n            <ion-col col-6 text-center>\n              <h2 style="font-weight: bold;" no-margin no-border>Estatura:</h2>\n            </ion-col>\n            <ion-col col-6 text-center>\n              <h2 style="font-weight: bold;" no-margin no-border>Peso:</h2>\n            </ion-col>\n          </ion-row>\n          <ion-row>\n            <ion-col col-6 text-center>{{jugador[\'height\']}}</ion-col>\n            <ion-col col-6 text-center>{{jugador[\'weight\']}}</ion-col>\n          </ion-row>\n        </div>\n      </ion-card>\n      <ion-card *ngIf="jugador[\'equipo_origen\']">\n        <ion-title>Equipo de Origen</ion-title>\n        <ion-item>\n          <ion-thumbnail item-start>\n            <img src="{{jugador[\'equipo_logo_path\']}}">\n          </ion-thumbnail>\n          <h2 style="font-weight: bold;">Equipo</h2>{{jugador[\'equipo_origen\']}}\n          <h2 style="font-weight: bold;">Pais</h2>{{jugador[\'equipo_pais_name\']}}\n        </ion-item>\n      </ion-card>\n    </ion-slide>\n  </ion-slides>\n</ion-content>\n'/*ion-inline-end:"C:\apptest\it911Cup\src\pages\jugadores\jugadores.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_rest_service_rest_service__["a" /* RestServiceProvider */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_3__providers_rest_service_rest_service__["a" /* RestServiceProvider */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* ModalController */]])
     ], JugadoresPage);
     return JugadoresPage;
 }());
@@ -3683,7 +3734,7 @@ var JugadoresPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RestServiceProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(208);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_config_config__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_config_config__ = __webpack_require__(286);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3709,6 +3760,11 @@ var RestServiceProvider = /** @class */ (function () {
     RestServiceProvider.prototype.getJugador = function (id_jug) {
         var url = __WEBPACK_IMPORTED_MODULE_2__app_config_config__["c" /* URL_PLAYERS */] + id_jug + '?api_token=' + __WEBPACK_IMPORTED_MODULE_2__app_config_config__["b" /* TOKEN */];
         console.log('Ver Jugador Url Rest', url);
+        return this.http.get(url);
+    };
+    RestServiceProvider.prototype.getEquipo = function (id_equipo) {
+        var url = __WEBPACK_IMPORTED_MODULE_2__app_config_config__["e" /* URL_TEAMS */] + id_equipo + '?api_token=' + __WEBPACK_IMPORTED_MODULE_2__app_config_config__["b" /* TOKEN */];
+        console.log('Ver TEAM Url Rest', url);
         return this.http.get(url);
     };
     RestServiceProvider = __decorate([
@@ -3743,28 +3799,30 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(272);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(195);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_google_maps__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_list_list__ = __webpack_require__(286);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_list_list__ = __webpack_require__(287);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_partidos_partidos__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_estadios_estadios__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_estadio_geopos_estadio_geopos__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_lista_partidos_lista_partidos__ = __webpack_require__(287);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_grupos_grupos__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_lista_partidos_lista_partidos__ = __webpack_require__(288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_grupos_grupos__ = __webpack_require__(290);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_equipo_equipo__ = __webpack_require__(205);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_jugadores_jugadores__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_rest_service_rest_service__ = __webpack_require__(207);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__angular_common_http__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_estadisticas_estadisticas__ = __webpack_require__(291);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -3798,7 +3856,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_12__pages_lista_partidos_lista_partidos__["a" /* ListaPartidosPage */],
                 __WEBPACK_IMPORTED_MODULE_13__pages_grupos_grupos__["a" /* GruposPage */],
                 __WEBPACK_IMPORTED_MODULE_14__pages_equipo_equipo__["a" /* EquipoPage */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_jugadores_jugadores__["a" /* JugadoresPage */]
+                __WEBPACK_IMPORTED_MODULE_15__pages_jugadores_jugadores__["a" /* JugadoresPage */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_estadisticas_estadisticas__["a" /* EstadisticasPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -3818,7 +3877,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_12__pages_lista_partidos_lista_partidos__["a" /* ListaPartidosPage */],
                 __WEBPACK_IMPORTED_MODULE_13__pages_grupos_grupos__["a" /* GruposPage */],
                 __WEBPACK_IMPORTED_MODULE_14__pages_equipo_equipo__["a" /* EquipoPage */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_jugadores_jugadores__["a" /* JugadoresPage */]
+                __WEBPACK_IMPORTED_MODULE_15__pages_jugadores_jugadores__["a" /* JugadoresPage */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_estadisticas_estadisticas__["a" /* EstadisticasPage */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
@@ -3842,7 +3902,7 @@ var AppModule = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(195);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(199);
@@ -3897,13 +3957,13 @@ var MyApp = /** @class */ (function () {
         this.nav.setRoot(page.component);
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Nav */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Nav */])
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\apptest\it911Cup\src\app\app.html"*/'<ion-menu [content]="content">\n  <ion-header no-border no-margin>\n    <ion-toolbar color="primary">\n      <ion-title text-center>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        <ion-icon name="{{p.icono}}" padding-right></ion-icon>{{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"C:\apptest\it911Cup\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
     return MyApp;
 }());
@@ -3912,7 +3972,652 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 285:
+/***/ 280:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Countries; });
+var Countries = [
+    {
+        "id": 2,
+        "name": "Poland",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Eastern Europe",
+            "world_region": "EMEA",
+            "fifa": "POL",
+            "iso": "POL",
+            "longitude": "19.37775993347168",
+            "latitude": "52.147850036621094"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Brazil",
+        "extra": {
+            "continent": "Americas",
+            "sub_region": "South America",
+            "world_region": "AMER",
+            "fifa": "BRA",
+            "iso": "BRA",
+            "longitude": "-52.97311782836914",
+            "latitude": "-10.81045150756836"
+        }
+    },
+    {
+        "id": 11,
+        "name": "Germany",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Western Europe",
+            "world_region": "EMEA",
+            "fifa": "GER",
+            "iso": "DEU",
+            "longitude": "10.382203102111816",
+            "latitude": "51.20246505737305"
+        }
+    },
+    {
+        "id": 17,
+        "name": "France",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Western Europe",
+            "world_region": "EMEA",
+            "fifa": "FRA",
+            "iso": "FRA",
+            "longitude": "2.3382623195648193",
+            "latitude": "46.63727951049805"
+        }
+    },
+    {
+        "id": 20,
+        "name": "Portugal",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Southern Europe",
+            "world_region": "EMEA",
+            "fifa": "POR",
+            "iso": "PRT",
+            "longitude": "-8.009422302246094",
+            "latitude": "39.64200973510742"
+        }
+    },
+    {
+        "id": 23,
+        "name": "Côte d'Ivoire",
+        "extra": {
+            "continent": "Africa",
+            "sub_region": "Western Africa",
+            "world_region": "EMEA",
+            "fifa": "CIV",
+            "iso": "CIV",
+            "longitude": "-5.552574634552002",
+            "latitude": "7.598755359649658"
+        }
+    },
+    {
+        "id": 26,
+        "name": "Mali",
+        "extra": {
+            "continent": "Africa",
+            "sub_region": "Western Africa",
+            "world_region": "EMEA",
+            "fifa": "MLI",
+            "iso": "MLI",
+            "longitude": "-3.5273818969726562",
+            "latitude": "17.35776710510254"
+        }
+    },
+    {
+        "id": 32,
+        "name": "Spain",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Southern Europe",
+            "world_region": "EMEA",
+            "fifa": "ESP",
+            "iso": "ESP",
+            "longitude": "-3.550692558288574",
+            "latitude": "40.396026611328125"
+        }
+    },
+    {
+        "id": 38,
+        "name": "Netherlands",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Western Europe",
+            "world_region": "EMEA",
+            "fifa": "NED",
+            "iso": "NLD",
+            "longitude": "5.5281572341918945",
+            "latitude": "52.34225845336914"
+        }
+    },
+    {
+        "id": 41,
+        "name": "Europe",
+        "extra": null
+    },
+    {
+        "id": 44,
+        "name": "Argentina",
+        "extra": {
+            "continent": "Americas",
+            "sub_region": "South America",
+            "world_region": "AMER",
+            "fifa": "ARG",
+            "iso": "ARG",
+            "longitude": "-64.85450744628906",
+            "latitude": "-37.071964263916016"
+        }
+    },
+    {
+        "id": 47,
+        "name": "Sweden",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Northern Europe",
+            "world_region": "EMEA",
+            "fifa": "SWE",
+            "iso": "SWE",
+            "longitude": "16.798059463500977",
+            "latitude": "62.67497253417969"
+        }
+    },
+    {
+        "id": 62,
+        "name": "Switzerland",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Western Europe",
+            "world_region": "EMEA",
+            "fifa": "SUI",
+            "iso": "CHE",
+            "longitude": "8.222854614257812",
+            "latitude": "46.80379867553711"
+        }
+    },
+    {
+        "id": 80,
+        "name": "Chile",
+        "extra": {
+            "continent": "Americas",
+            "sub_region": "South America",
+            "world_region": "AMER",
+            "fifa": "CHI",
+            "iso": "CHL",
+            "longitude": "-71.67467498779297",
+            "latitude": "-35.78622817993164"
+        }
+    },
+    {
+        "id": 86,
+        "name": "Ukraine",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Eastern Europe",
+            "world_region": "EMEA",
+            "fifa": "UKR",
+            "iso": "UKR",
+            "longitude": "31.47578239440918",
+            "latitude": "48.92656326293945"
+        }
+    },
+    {
+        "id": 98,
+        "name": "Australia",
+        "extra": {
+            "continent": "Oceania",
+            "sub_region": "Australia and New Zealand",
+            "world_region": "APAC",
+            "fifa": "AUS",
+            "iso": "AUS",
+            "longitude": "134.50411987304688",
+            "latitude": "-25.585241317749023"
+        }
+    },
+    {
+        "id": 107,
+        "name": "Iraq",
+        "extra": {
+            "continent": "Asia",
+            "sub_region": "Western Asia",
+            "world_region": "EMEA",
+            "fifa": "IRQ",
+            "iso": "IRQ",
+            "longitude": "43.77495574951172",
+            "latitude": "33.044586181640625"
+        }
+    },
+    {
+        "id": 116,
+        "name": "Cyprus",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Eastern Europe",
+            "world_region": "EMEA",
+            "fifa": "CYP",
+            "iso": "CYP",
+            "longitude": "33.486717224121094",
+            "latitude": "35.11473846435547"
+        }
+    },
+    {
+        "id": 119,
+        "name": "Georgia",
+        "extra": {
+            "continent": "Asia",
+            "sub_region": "Western Asia",
+            "world_region": "EMEA",
+            "fifa": "GEO",
+            "iso": "GEO",
+            "longitude": "43.3713615",
+            "latitude": "42.3207845"
+        }
+    },
+    {
+        "id": 122,
+        "name": "Kosovo",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Eastern Europe",
+            "world_region": null,
+            "fifa": null,
+            "iso": "UNK",
+            "longitude": null,
+            "latitude": null
+        }
+    },
+    {
+        "id": 125,
+        "name": "Greece",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Southern Europe",
+            "world_region": "EMEA",
+            "fifa": "GRE",
+            "iso": "GRC",
+            "longitude": "21.897409439086914",
+            "latitude": "39.68437194824219"
+        }
+    },
+    {
+        "id": 143,
+        "name": "Austria",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Western Europe",
+            "world_region": "EMEA",
+            "fifa": "AUT",
+            "iso": "AUT",
+            "longitude": "14.14021110534668",
+            "latitude": "47.58843994140625"
+        }
+    },
+    {
+        "id": 146,
+        "name": "South Africa",
+        "extra": {
+            "continent": "Africa",
+            "sub_region": "Southern Africa",
+            "world_region": "EMEA",
+            "fifa": "RSA",
+            "iso": "ZAF",
+            "longitude": "25.06287956237793",
+            "latitude": "-29.046184539794922"
+        }
+    },
+    {
+        "id": 155,
+        "name": "Romania",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Eastern Europe",
+            "world_region": "EMEA",
+            "fifa": "ROU",
+            "iso": "ROU",
+            "longitude": "25.005935668945312",
+            "latitude": "45.83774185180664"
+        }
+    },
+    {
+        "id": 158,
+        "name": "Uruguay",
+        "extra": {
+            "continent": "Americas",
+            "sub_region": "South America",
+            "world_region": "AMER",
+            "fifa": "URU",
+            "iso": "URY",
+            "longitude": "-56.055908203125",
+            "latitude": "-32.96965408325195"
+        }
+    },
+    {
+        "id": 200,
+        "name": "Senegal",
+        "extra": {
+            "continent": "Africa",
+            "sub_region": "Western Africa",
+            "world_region": "EMEA",
+            "fifa": "SEN",
+            "iso": "SEN",
+            "longitude": "-14.531643867492676",
+            "latitude": "14.36251163482666"
+        }
+    },
+    {
+        "id": 212,
+        "name": "Belarus",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Eastern Europe",
+            "world_region": "EMEA",
+            "fifa": "BLR",
+            "iso": "BLR",
+            "longitude": "28.054094314575195",
+            "latitude": "53.54347229003906"
+        }
+    },
+    {
+        "id": 224,
+        "name": "Bulgaria",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Eastern Europe",
+            "world_region": "EMEA",
+            "fifa": "BUL",
+            "iso": "BGR",
+            "longitude": "25.283733367919922",
+            "latitude": "42.7661018371582"
+        }
+    },
+    {
+        "id": 227,
+        "name": "Russia",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Eastern Europe",
+            "world_region": "EMEA",
+            "fifa": "RUS",
+            "iso": "RUS",
+            "longitude": "103.75398254394531",
+            "latitude": "63.125186920166016"
+        }
+    },
+    {
+        "id": 245,
+        "name": "Czech Republic",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Eastern Europe",
+            "world_region": "EMEA",
+            "fifa": "CZE",
+            "iso": "CZE",
+            "longitude": "15.331501007080078",
+            "latitude": "49.739105224609375"
+        }
+    },
+    {
+        "id": 251,
+        "name": "Italy",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Southern Europe",
+            "world_region": "EMEA",
+            "fifa": "ITA",
+            "iso": "ITA",
+            "longitude": "12.493823051452637",
+            "latitude": "42.7669792175293"
+        }
+    },
+    {
+        "id": 266,
+        "name": "Croatia",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Southern Europe",
+            "world_region": "EMEA",
+            "fifa": "CRO",
+            "iso": "HRV",
+            "longitude": "15.734503746032715",
+            "latitude": "45.444305419921875"
+        }
+    },
+    {
+        "id": 275,
+        "name": "Venezuela",
+        "extra": {
+            "continent": "Americas",
+            "sub_region": "South America",
+            "world_region": "AMER",
+            "fifa": "VEN",
+            "iso": "VEN",
+            "longitude": "-66.14541625976562",
+            "latitude": "7.665388584136963"
+        }
+    },
+    {
+        "id": 296,
+        "name": "Serbia",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Southern Europe",
+            "world_region": "EMEA",
+            "fifa": "SRB",
+            "iso": "SRB",
+            "longitude": "20.797958374023438",
+            "latitude": "44.23297119140625"
+        }
+    },
+    {
+        "id": 311,
+        "name": "New Caledonia",
+        "extra": {
+            "continent": "Oceania",
+            "sub_region": "Melanesia",
+            "world_region": "APAC",
+            "fifa": "NCL",
+            "iso": "NCL",
+            "longitude": "165.298583984375",
+            "latitude": "-21.31782341003418"
+        }
+    },
+    {
+        "id": 320,
+        "name": "Denmark",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Northern Europe",
+            "world_region": "EMEA",
+            "fifa": "DEN",
+            "iso": "DNK",
+            "longitude": "9.555907249450684",
+            "latitude": "56.10176086425781"
+        }
+    },
+    {
+        "id": 338,
+        "name": "Peru",
+        "extra": {
+            "continent": "Americas",
+            "sub_region": "South America",
+            "world_region": "AMER",
+            "fifa": "PER",
+            "iso": "PER",
+            "longitude": "-74.422119140625",
+            "latitude": "-9.212532997131348"
+        }
+    },
+    {
+        "id": 353,
+        "name": "Colombia",
+        "extra": {
+            "continent": "Americas",
+            "sub_region": "South America",
+            "world_region": "AMER",
+            "fifa": "COL",
+            "iso": "COL",
+            "longitude": "-73.27796936035156",
+            "latitude": "3.9976072311401367"
+        }
+    },
+    {
+        "id": 401,
+        "name": "Slovakia",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Eastern Europe",
+            "world_region": "EMEA",
+            "fifa": "SVK",
+            "iso": "SVK",
+            "longitude": "19.48488998413086",
+            "latitude": "48.70748519897461"
+        }
+    },
+    {
+        "id": 404,
+        "name": "Turkey",
+        "extra": {
+            "continent": "Asia",
+            "sub_region": "Western Asia",
+            "world_region": "EMEA",
+            "fifa": "TUR",
+            "iso": "TUR",
+            "longitude": "34.93033981323242",
+            "latitude": "39.05101013183594"
+        }
+    },
+    {
+        "id": 455,
+        "name": "Republic of Ireland",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Northern Europe",
+            "world_region": "EMEA",
+            "fifa": "IRL",
+            "iso": "IRL",
+            "longitude": "-8.196102142333984",
+            "latitude": "53.1827278137207"
+        }
+    },
+    {
+        "id": 458,
+        "name": "Mexico",
+        "extra": {
+            "continent": "Americas",
+            "sub_region": "Central America",
+            "world_region": "AMER",
+            "fifa": "MEX",
+            "iso": "MEX",
+            "longitude": "-102.6333999633789",
+            "latitude": "23.909093856811523"
+        }
+    },
+    {
+        "id": 459,
+        "name": "Ecuador",
+        "extra": {
+            "continent": "Americas",
+            "sub_region": "South America",
+            "world_region": "AMER",
+            "fifa": "ECU",
+            "iso": "ECU",
+            "longitude": "-78.87104034423828",
+            "latitude": "-1.421528935432434"
+        }
+    },
+    {
+        "id": 462,
+        "name": "England",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Northern Europe",
+            "world_region": "EMEA",
+            "fifa": "ENG,NIR,SCO,WAL",
+            "iso": "GBR",
+            "longitude": "-2.2125117778778076",
+            "latitude": "54.56088638305664"
+        }
+    },
+    {
+        "id": 468,
+        "name": "Ghana",
+        "extra": {
+            "continent": "Africa",
+            "sub_region": "Western Africa",
+            "world_region": "EMEA",
+            "fifa": "GHA",
+            "iso": "GHA",
+            "longitude": "-1.2043862342834473",
+            "latitude": "7.921330451965332"
+        }
+    },
+    {
+        "id": 479,
+        "name": "Japan",
+        "extra": {
+            "continent": "Asia",
+            "sub_region": "Eastern Asia",
+            "world_region": "APAC",
+            "fifa": "JPN",
+            "iso": "JPN",
+            "longitude": "139.0772705078125",
+            "latitude": "36.281646728515625"
+        }
+    },
+    {
+        "id": 488,
+        "name": "Iran",
+        "extra": {
+            "continent": "Asia",
+            "sub_region": "Southern Asia",
+            "world_region": "EMEA",
+            "fifa": "IRN",
+            "iso": "IRN",
+            "longitude": "54.2942008972168",
+            "latitude": "32.50077819824219"
+        }
+    },
+    {
+        "id": 491,
+        "name": "Northern Ireland",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Northern Europe",
+            "world_region": "EMEA",
+            "fifa": "IRL",
+            "iso": "IRL",
+            "longitude": "-8.196102142333984",
+            "latitude": "53.1827278137207"
+        }
+    },
+    {
+        "id": 507,
+        "name": "Bosnia and Herzegovina",
+        "extra": {
+            "continent": "Europe",
+            "sub_region": "Southern Europe",
+            "world_region": "EMEA",
+            "fifa": "BIH",
+            "iso": "BIH",
+            "longitude": "17.790241241455078",
+            "latitude": "44.16533279418945"
+        }
+    },
+    {
+        "id": 515,
+        "name": "Wales",
+        "extra": null
+    }
+];
+//# sourceMappingURL=countries.js.map
+
+/***/ }),
+
+/***/ 286:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3921,7 +4626,7 @@ var MyApp = /** @class */ (function () {
 /* unused harmony export LIGA_ID */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return URL_SQUAD; });
 /* unused harmony export URL_VENUES */
-/* unused harmony export URL_TEAMS */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return URL_TEAMS; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return URL_PLAYERS; });
 var TOKEN = 'PNXpSNzfU3uJ1x2IItfvTrIG7Ogxz55fPBLIkXDzkzwF7rlK85zCzK92z0WJ';
 var TEMPORADA = '892';
@@ -3934,13 +4639,13 @@ var URL_PLAYERS = 'https://soccer.sportmonks.com/api/v2.0/players/';
 
 /***/ }),
 
-/***/ 286:
+/***/ 287:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3981,7 +4686,7 @@ var ListPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-list',template:/*ion-inline-start:"C:\apptest\it911Cup\src\pages\list\list.html"*/'<ion-header no-border no-margin>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>List</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n      <ion-icon [name]="item.icon" item-start></ion-icon>\n      {{item.title}}\n      <div class="item-note" item-end>\n        {{item.note}}\n      </div>\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\apptest\it911Cup\src\pages\list\list.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], ListPage);
     return ListPage;
     var ListPage_1;
@@ -3991,14 +4696,14 @@ var ListPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 287:
+/***/ 288:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListaPartidosPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_config_fechas__ = __webpack_require__(288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_config_fechas__ = __webpack_require__(289);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_config_fixtures__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_config_equiposMonks__ = __webpack_require__(100);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -4048,7 +4753,7 @@ var ListaPartidosPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-lista-partidos',template:/*ion-inline-start:"C:\apptest\it911Cup\src\pages\lista-partidos\lista-partidos.html"*/'<div>\n  <ion-segment [(ngModel)]="mes" color="light" mode="ios">\n    <ion-segment-button *ngFor ="let dia of mes" value="\'ju\' + {{dia}}">\n      {{dia}}\n    </ion-segment-button>\n  </ion-segment>\n</div>\n<div>\n  <button ion-button (onclick)="getDatesBetween()" >Ver</button>\n</div>\n'/*ion-inline-end:"C:\apptest\it911Cup\src\pages\lista-partidos\lista-partidos.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], ListaPartidosPage);
     return ListaPartidosPage;
 }());
@@ -4057,7 +4762,7 @@ var ListaPartidosPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 288:
+/***/ 289:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4073,13 +4778,13 @@ var Fechas = { "Junio": [
 
 /***/ }),
 
-/***/ 289:
+/***/ 290:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GruposPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4109,12 +4814,58 @@ var GruposPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-grupos',template:/*ion-inline-start:"C:\apptest\it911Cup\src\pages\grupos\grupos.html"*/'<!--\n  Generated template for the GruposPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>grupos</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\apptest\it911Cup\src\pages\grupos\grupos.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], GruposPage);
     return GruposPage;
 }());
 
 //# sourceMappingURL=grupos.js.map
+
+/***/ }),
+
+/***/ 291:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EstadisticasPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+// @IonicPage()
+var EstadisticasPage = /** @class */ (function () {
+    function EstadisticasPage(navCtrl, navParams, viewCtrl) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.viewCtrl = viewCtrl;
+    }
+    EstadisticasPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad EstadisticasPage');
+    };
+    EstadisticasPage.prototype.closeModal = function () {
+        this.viewCtrl.dismiss();
+    };
+    EstadisticasPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-estadisticas',template:/*ion-inline-start:"C:\apptest\it911Cup\src\pages\estadisticas\estadisticas.html"*/'<ion-header no-border no-margin>\n  <ion-navbar color="primary">\n    <button ion-button (click)="closeModal()">\n      <ion-icon name="close-circle"></ion-icon>\n    </button>\n    <ion-title text-center>Estadísticas</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\apptest\it911Cup\src\pages\estadisticas\estadisticas.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ViewController */]])
+    ], EstadisticasPage);
+    return EstadisticasPage;
+}());
+
+//# sourceMappingURL=estadisticas.js.map
 
 /***/ })
 

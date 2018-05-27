@@ -21,6 +21,7 @@ import { JugadoresPage } from "../pages/jugadores/jugadores";
 
 import { RestServiceProvider } from '../providers/rest-service/rest-service';
 import { HttpClientModule } from "@angular/common/http";
+import { EstadisticasPage } from "../pages/estadisticas/estadisticas";
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { HttpClientModule } from "@angular/common/http";
     ListaPartidosPage,
     GruposPage,
     EquipoPage,
-    JugadoresPage
+    JugadoresPage,
+    EstadisticasPage
   ],
   imports: [
     BrowserModule,
@@ -51,7 +53,8 @@ import { HttpClientModule } from "@angular/common/http";
     ListaPartidosPage,
     GruposPage,
     EquipoPage,
-    JugadoresPage
+    JugadoresPage,
+    EstadisticasPage
   ],
   providers: [
     StatusBar,
