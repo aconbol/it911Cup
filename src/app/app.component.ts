@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { PartidosPage } from "../pages/partidos/partidos";
 import { EstadiosPage } from "../pages/estadios/estadios";
 import { EquipoPage } from "../pages/equipo/equipo";
+import { GruposPage } from "../pages/grupos/grupos";
 
 @Component({
   templateUrl: 'app.html'
@@ -28,6 +29,7 @@ export class MyApp {
       { title: 'Partidos', icono: 'football', component: PartidosPage },
       { title: 'Estadios', icono: 'grid', component: EstadiosPage },
       { title: 'Equipos', icono: 'people', component: EquipoPage },
+      { title: 'Fase Grupos', icono: 'globe', component: GruposPage },
     ];
 
   }

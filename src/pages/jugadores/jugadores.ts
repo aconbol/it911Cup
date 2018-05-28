@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { ModalController, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 import { Countries } from "../../app/config/countries";
 
 import { RestServiceProvider } from "../../providers/rest-service/rest-service";
 import { Equipo } from "../../app/model/equipoModel";
+import { EstadisticasPage } from "../estadisticas/estadisticas";
 
 @Component({
   selector: 'page-jugadores',
@@ -24,8 +25,7 @@ export class JugadoresPage {
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
-              public restService: RestServiceProvider,
-              public modalCtrl: ModalController) {
+              public restService: RestServiceProvider) {
     this.eq_id = this.navParams.get('equipo_id');
     this.eq_name = this.navParams.get('equipo_name');
     this.getSquad(this.eq_id);
@@ -102,9 +102,11 @@ export class JugadoresPage {
       });
   }
 
-  openModal(jugador) {
-    const modalPage = this.modalCtrl.create('ModalPage');
-    modalPage.present();
+  openEstadisticas(jugador) {
+    this.navCtrl.push(EstadisticasPage, {
+      datos_jugador: jugador,
+      eq_name: this.eq_name
+    })
   }
 
 }

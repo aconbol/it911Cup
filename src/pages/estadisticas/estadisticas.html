@@ -1,12 +1,61 @@
 <ion-header no-border no-margin>
   <ion-navbar color="primary">
-    <button ion-button (click)="closeModal()">
-      <ion-icon name="close-circle"></ion-icon>
-    </button>
     <ion-title text-center>Estadísticas</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+  <ion-card>
+    <ion-list no-lines>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="{{jugador['image_path']}}">
+        </ion-avatar>
+        <h2 text-center>{{jugador['fullname']}}</h2>
+        <h2 text-center>{{seleccion}}</h2>
+        <h3 text-center *ngIf="jugador['number']">{{'Número: ' + jugador['number']}}</h3>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+  <div padding>
+    <div class="row header">
+      <div class="col">Datos</div>
+    </div>
+    <div class="row">
+      <div class="col">Apariciones</div>
+      <div class="col">{{jugador['appearences']}}</div>
+    </div>
+    <div class="row">
+      <div class="col">Minutos jugados</div>
+      <div class="col">{{jugador['minutes']}}</div>
+    </div>
+    <div class="row">
+      <div class="col">Goles</div>
+      <div class="col">{{jugador['goals']}}</div>
+    </div>
+    <div class="row">
+      <div class="col">Asistencias</div>
+      <div class="col">{{jugador['assists']}}</div>
+    </div>
+    <div class="row">
+      <div class="col">Fueras de Juego</div>
+      <div class="col">{{jugador['lineups']}}</div>
+    </div>
+    <div class="row header">
+      <div class="col">Tarjetas</div>
+    </div>
+    <div class="row">
+      <div class="col">Amarillas</div>
+      <div class="col">{{jugador['yellowcards']}}</div>
+    </div>
+    <div class="row">
+      <div class="col">Doble Amarilla</div>
+      <div class="col">{{jugador['yellowred']}}</div>
+    </div>
+    <div class="row">
+      <div class="col">Rojas</div>
+      <div class="col">{{jugador['redcards']}}</div>
+    </div>
+  </div>
 
 </ion-content>

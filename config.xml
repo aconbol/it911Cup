@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="tech.it911.it911cup" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="tech.it911.it911cup" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>it911Cup</name>
     <description>App seguimiento al Mundial WorldCup Rusia 2018.</description>
     <author email="acontreras@it911.tech" href="http://it911.tech/">IT911 Developer Team</author>

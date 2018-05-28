@@ -25691,6 +25691,58 @@ page-estadios #map_canvas {
   height: 60%;
 }
 
+page-estadisticas .header .col {
+  background-color: #456ba5;
+  text-align: center;
+  color: #f4f4f4;
+}
+
+page-estadisticas .col {
+  border: solid 1px grey;
+  border-bottom-style: none;
+  border-right-style: none;
+}
+
+page-estadisticas .row .dato {
+  text-align: center;
+}
+
+page-estadisticas .col:last-child {
+  border-right: solid 1px grey;
+}
+
+page-estadisticas .row:last-child .col {
+  border-bottom: solid 1px grey;
+}
+
+page-grupos .header .col {
+  background-color: #456ba5;
+  text-align: center;
+  color: #f4f4f4;
+}
+
+page-grupos .col {
+  border: solid 1px grey;
+  border-bottom-style: none;
+  border-right-style: none;
+}
+
+page-grupos .row .equipo {
+  width: 50%;
+}
+
+page-grupos .row .dato {
+  text-align: center;
+}
+
+page-grupos .col:last-child {
+  border-right: solid 1px grey;
+}
+
+page-grupos .row:last-child .col {
+  border-bottom: solid 1px grey;
+}
+
 .background {
   background: url("../assets/imgs/home-fondo-blanco.png") no-repeat fixed center;
   background-size: cover;
