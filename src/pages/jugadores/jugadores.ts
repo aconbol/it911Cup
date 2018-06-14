@@ -42,8 +42,6 @@ export class JugadoresPage {
         this.squadJson = plantel['data'];
         this.getJugadoresEq(plantel['data']);
         this.datosJugadoresEq = plantel['data'];
-        console.log('JSON getSquad en subscribe - jugadores.ts',
-          this.datosJugadoresEq);
         this.squadLoaded = Promise.resolve(true);
       });
   }
@@ -68,7 +66,6 @@ export class JugadoresPage {
           //   player.datoActual = datosPlayer;
           Object.assign(player, datosPlayer);
           this.getTeam(datosPlayer['player_id'], player);
-          console.log('En squad se encontro el jugdor', datosPlayer['player_id'])
         },
         error => {
           console.log('error al encontrar jugadores por equipo');
@@ -90,9 +87,6 @@ export class JugadoresPage {
           if (pais.id === dato.country_id)
                 player.equipo_pais_name = pais.name;
         });
-        console.log('Datos equipo actual',
-                  this.eq_jug_name,
-                  this.eq_img_path);
         this.jugadorLoaded = Promise.resolve(true);
       },
       error => {

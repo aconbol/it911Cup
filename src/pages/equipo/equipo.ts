@@ -43,7 +43,7 @@ export class EquipoPage {
   }
 
   jugadores(equipo, id) {
-    console.log('Equipo:', equipo, id);
+    // console.log('Equipo:', equipo, id);
     this.navCtrl.push(JugadoresPage, {
       equipo_name: equipo,
       equipo_id: id

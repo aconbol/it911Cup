@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-import { Fixtures } from "../../app/config/fixtures";
 import { EquiposMonks } from "../../app/config/equiposMonks";
-import { Venues } from "../../app/config/venues";
 
+import { RestServiceProvider } from "../../providers/rest-service/rest-service";
 
 @Component({
   selector: 'page-partidos',
@@ -13,24 +12,34 @@ import { Venues } from "../../app/config/venues";
 export class PartidosPage {
 
   public diaSemana = ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'];
-  public fixtures = Fixtures;
+  public fixtures: any;
+  public fixturesLoaded: Promise<boolean>;
   private equipos = EquiposMonks;
-  private stadiums = Venues;
   public dias: Date[]  = this.getDatesBetween();
+  private obsFix;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              public restService: RestServiceProvider) {
   }
 
   ionViewDidLoad() {
+    this.obsFix = this.getFixturesFromTo();
     console.log('ionViewDidLoad PartidosPage');
   }
 
-  navigateTo1(){
-    this.navCtrl.push('SegmentPage', {param1: '1'});
+  ionViewWillLeave() {
+    this.obsFix.unsubscribe();
   }
 
-  navigateTo2(){
-    this.navCtrl.push('SegmentPage', {param1: '2'});
+  getFixturesFromTo() {
+    return this.restService.getFixturesFromTo('2018-06-14', '2018-07-15')
+      .subscribe(programacion => {
+        this.fixtures = programacion['data'];
+        // console.log('JSON FIXTURES en subscribe - fixtures.ts',
+        //   this.fixtures);
+        this.fixturesLoaded = Promise.resolve(true);
+      });
   }
 
   getDatesBetween(): Date[] {
@@ -61,16 +70,6 @@ export class PartidosPage {
       if (equipo.id === id) nomEq = equipo.name;
     });
     return nomEq;
-  }
-
-  cargarCiudad(id: number): string {
-    let ciudad = null;
-    this.stadiums.forEach( campo => {
-      if (campo.id === id) {
-        ciudad = campo.city;
-      }
-    });
-    return ciudad;
   }
 
   getDia(fixture: any): string {
